@@ -1,0 +1,24 @@
+package com.geo.toolbox.ui.pages
+
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+import com.geo.toolbox.ui.widgets.GlassPreviewCard
+
+@Composable
+fun AnalyzePage() {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .verticalScroll(androidx.compose.foundation.ScrollState(0))
+            .padding(top = 12.dp, bottom = 100.dp)
+    ) {
+        GlassPreviewCard(title = "产状测量") {}
+        GlassPreviewCard(title = "投影图【赤平投影 | 玫瑰花图】") {}
+        GlassPreviewCard(title = "钻孔模块【钻孔计算 | 钻孔绘制】") {}
+    }
+}
